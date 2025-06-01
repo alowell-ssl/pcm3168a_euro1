@@ -802,7 +802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b312f5e-2038-4412-af44-9860efddcb49")
-		(property "Reference" "C21"
+		(property "Reference" "C25"
 			(at 145.8341 81.3441 0)
 			(effects
 				(font
@@ -856,7 +856,7 @@
 		(instances
 			(project ""
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/30c88bb8-75d7-4f91-9e19-1fd8d6337b61"
-					(reference "C21")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -872,7 +872,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89f043b9-c1a2-4058-a471-4d363cc7ebb1")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR053"
 			(at 138.43 111.76 0)
 			(effects
 				(font
@@ -923,7 +923,7 @@
 		(instances
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/30c88bb8-75d7-4f91-9e19-1fd8d6337b61"
-					(reference "#PWR049")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -939,7 +939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bbccf1f-fcd5-4f16-8b83-5488d44a7b24")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR052"
 			(at 138.43 81.28 0)
 			(effects
 				(font
@@ -989,7 +989,7 @@
 		(instances
 			(project ""
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/30c88bb8-75d7-4f91-9e19-1fd8d6337b61"
-					(reference "#PWR048")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -1078,7 +1078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f79327fc-f6e0-4ac4-b7be-312fdb4e18c5")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR054"
 			(at 143.51 91.44 0)
 			(effects
 				(font
@@ -1129,7 +1129,7 @@
 		(instances
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/30c88bb8-75d7-4f91-9e19-1fd8d6337b61"
-					(reference "#PWR050")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -1144,7 +1144,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fbae9642-885d-429e-9dff-e0b47cc7f576")
-		(property "Reference" "R38"
+		(property "Reference" "R34"
 			(at 123.19 92.71 90)
 			(effects
 				(font
@@ -1196,7 +1196,7 @@
 		(instances
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271/30c88bb8-75d7-4f91-9e19-1fd8d6337b61"
-					(reference "R38")
+					(reference "R34")
 					(unit 1)
 				)
 			)

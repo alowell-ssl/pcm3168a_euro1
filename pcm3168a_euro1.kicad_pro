@@ -684,12 +684,28 @@
       "osc_out"
     ],
     [
+      "312eff22-250f-49d3-957a-ceb5aed7ec4e",
+      "inamp2"
+    ],
+    [
       "1ed0643a-d8c6-437c-9189-4d518e5ee62a",
       "power"
     ],
     [
       "2c142203-7124-4122-98dd-218e8d3c48ca",
-      "amp"
+      "inamp1"
+    ],
+    [
+      "39c714e7-9cdc-45cf-9c4b-708372d4a589",
+      "inamp3"
+    ],
+    [
+      "9156926b-7ba0-4666-8d70-43fdca947cb0",
+      "inamp4"
+    ],
+    [
+      "b2e2869c-2213-4ecf-8a31-fa93532504a2",
+      "outamp1"
     ]
   ],
   "text_variables": {}
