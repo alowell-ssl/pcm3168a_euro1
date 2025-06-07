@@ -656,8 +656,8 @@
       "dout1"
     ],
     [
-      "f5984572-3a10-4c6c-8f40-83f484c9a466",
-      "lrclk_slave"
+      "b7a4a215-37b6-4745-b8b2-f6278d578cef",
+      "clk_in"
     ],
     [
       "ee90019f-ef8b-4f09-a2c2-0f839f360843",
@@ -668,20 +668,16 @@
       "oscillator"
     ],
     [
-      "c547ec39-eaea-4f85-aadd-87956f9fb5f2",
-      "mclk"
-    ],
-    [
       "574565f4-e878-4122-bdfb-3546f72b1c48",
       "bck_master"
     ],
     [
-      "c889fde3-e058-4b42-9958-89d0b807b204",
-      "external_clock"
+      "7c34edcc-8ce9-4bc7-b296-ca085c8331a0",
+      "clk_out"
     ],
     [
-      "07b681b5-c180-4011-8c75-f7e01e546777",
-      "osc_out"
+      "b6047fd3-53b5-47f8-b6c9-a6166e4b74cc",
+      "outamp2"
     ],
     [
       "312eff22-250f-49d3-957a-ceb5aed7ec4e",
@@ -706,6 +702,14 @@
     [
       "b2e2869c-2213-4ecf-8a31-fa93532504a2",
       "outamp1"
+    ],
+    [
+      "4dcdfa7a-f909-42db-a7b5-440185ab3d93",
+      "outamp3"
+    ],
+    [
+      "516cee42-7b9a-4e4c-87bf-2eb1f5670973",
+      "outamp4"
     ]
   ],
   "text_variables": {}
