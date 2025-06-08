@@ -1675,7 +1675,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical"
+		(property "Footprint" "pcm3168a_euro1:SMA_Amphenol_901-144_Vertical_awl1"
 			(at 109.22 91.44 0)
 			(effects
 				(font

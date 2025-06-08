@@ -1342,6 +1342,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "FOOTPRINT\nOK"
+		(exclude_from_sim no)
+		(at 110.49 103.124 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 15 1)
+			)
+		)
+		(uuid "2d15c97f-0397-49e9-b7cf-ba8f1904bf93")
+	)
 	(junction
 		(at 78.74 133.35)
 		(diameter 0)
@@ -1812,7 +1823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical"
+		(property "Footprint" "pcm3168a_euro1:SMA_Amphenol_901-144_Vertical_awl1"
 			(at 219.71 110.49 0)
 			(effects
 				(font
