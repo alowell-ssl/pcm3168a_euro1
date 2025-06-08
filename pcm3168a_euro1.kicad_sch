@@ -1897,6 +1897,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2124,7 +2231,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "- rename 3.3V to VDD\n- connect rails to codec\n- check power connector orientation, compare to behringer CP1A\n- leds, probe points\n- check SMA clearances\n- lookup proper termination for unused analog inputs\n- adjust thermal pad footprint for easier soldering\n- tant polarity silkscreen\n- CP1a: hole to hole distance is 122.5 mm. bolts are M3, use 3.4 mm hole\n\n"
+	(text "- check LDO pin 4\n- rename 3.3V to VDD\n- connect rails to codec\n- check power connector orientation, compare to behringer CP1A\n- leds, probe points\n- check SMA clearances\n- lookup proper termination for unused analog inputs\n- adjust thermal pad footprint for easier soldering\n- tant polarity silkscreen\n- CP1a: hole to hole distance is 122.5 mm. bolts are M3, use 3.4 mm hole\n\n"
 		(exclude_from_sim no)
 		(at 220.98 -19.05 0)
 		(effects
@@ -2144,6 +2251,12 @@
 			)
 		)
 		(uuid "ef2f38ad-0840-4dcf-ab92-ce03304ee25b")
+	)
+	(junction
+		(at 326.39 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "167fee75-7794-4e17-824d-97ac63f4d082")
 	)
 	(junction
 		(at 284.48 157.48)
@@ -2823,6 +2936,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 152.4) (xy 334.01 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fadd928-1e18-45fa-9d07-4b2c5e3f010a")
+	)
+	(wire
+		(pts
 			(xy 76.2 112.395) (xy 71.12 112.395)
 		)
 		(stroke
@@ -2863,7 +2986,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 152.4) (xy 334.01 152.4)
+			(xy 261.62 152.4) (xy 326.39 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3370,6 +3493,16 @@
 			(type default)
 		)
 		(uuid "d806cfbd-f7be-4fe2-85b2-ea38ecd8d85a")
+	)
+	(wire
+		(pts
+			(xy 326.39 161.29) (xy 326.39 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d920b34c-c694-4a28-9ba7-2ea47bb91bc8")
 	)
 	(wire
 		(pts
@@ -5408,7 +5541,25 @@
 			"QgAAAEEAAABqAAAAUgAAADQAAAA5AAAAegAAAFkAAABJAAAAegAAAHUAAABFAAAARwAAAHcAAABS"
 			"AAAAVwAAAHAAAABMAAAAQgAAADAAAABDAAAAUgAAAGkAAABqAAAAMAAAAGMAAABqAAAAcAAAAFcA"
 			"AABEAAAAWAAAAGsAAABjAAAAegAAADIAAAAxAAAATwAAAGQAAAA4AAAAbgAAAEEAAAAyAAAAQwAA"
-			"AGgAAABkAAAAbgAAAA=="
+			"AGgAAABkAAAAbgAAAOcbE75lkvc96dR2v/29cb73dG1Bm3JBwXCRcD5kMW1BEINBwb3pfD5qn21B"
+			"eHNBwTVicz6GiUU94ix3v+/2gr4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////////////////q"
+			"o4c+95ZMvQJQTMEBAAAAVymBwYdrc0KJv8FCvpSNQgAAAADwAAAAAAAAACAAAAAAAAAA/9YfcT5f"
+			"AACQ/KeCO18AAAAAAAAAAAAAEQMAAAAAAADgNKeCO18AACAbPwT8eQAANGJzPmUxbUHvdkHBvul8"
+			"PpK7bEEAfUHB+SV4PgUAAADgoe9z+3kAAODxHWY7XwAAAAAAANs8Yb3vu3u/SXAxvnIa+L3WP3u/"
+			"czUYvryyYD149Hy/5RsTvsezbEFnekHBNWJzPsFFbEHwdkHBvel8PmQxbUEQg0HBvel8PpMjUr1N"
+			"PX+/bVVrvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////////EIbD3fw1I9RBQ1wQEA"
+			"AADAD4vB2CFlQtSxSELAD4tBAAAAAPAAAAAAAAAAIAAAAAAAAADv1x9xPl8AAKD9p4I7XwAAAAAA"
+			"AAAAAAABAgAAAAAAAOA0p4I7XwAAIBs/BPx5AAA0YnM+wkVsQThBQcG+6Xw++NJrQRRcQcH5JXg+"
+			"BQAAAOCh73P7eQAA4PEdZjtfAAAAAAAAZ/xnvt5mdb/epjC+1pWQvmasc7/EXfS9cRr4vdU/e79z"
+			"NRi+vcprQcBXQcE1YnM+L2BrQTlBQcG96Xw+wUVsQfB2QcG96Xw+EttovoHMeL+SF3u9AAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAA////////////////CC6BPXCYbz6t7gnBAQAAAHq8jsHMUmZC4YBH"
+			"Qnq8jkEAAAAA8AAAAAAAAAAgAAAAAAAAAN/UH3E+XwAAsP6ngjtfAAAAAAAAAAAAAPEAAAAAAAAA"
+			"4ACogjtfAAAwBqiCO18AAMheaz7mN2xBKyFBwTZicz5oxmtB5DxBwX9gbz4FAAAA4KHvc/t5AADg"
+			"8R1mO18AAAAAAABowEK+IelIv37/Fr+NdgK+4yVYv9M8Bb/Keom+wS9Pv7a7Bb+9ymtBwFdBwTVi"
+			"cz7lN2xBnVhBwcleaz7sVGtBLCFBwcleaz5gaj++8+hDv/SvHb8AAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAD///////////////+6DU4/hiB6PqyvBMEBAAAArF6QQYWphMJT0nXCrF6QwQAAAADgywAA"
+			"AAAAACAAAAAAAAAA4G5Fez5fAABwRP2IO18AAAAAAAAAAAAA8QAAAAAAAADwAaiCO18AADAGqII7"
+			"XwAANGJzPsJFbEG/Vw=="
 		)
 	)
 	(image
@@ -8693,7 +8844,25 @@
 			"////////////////////////////////////////////////////////////////////////////"
 			"////////////////////////////////////////////////////////////////////////////"
 			"////////////////////////////////////////////////////////////////////////////"
-			"/////////////////////////////////////////////////////////////////w=="
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////////////////////////////////////////////////"
+			"////////////////////////////////8QUAAAAAAACwjG+BO18AAGBJslc7XwAAAAAAAAAAAAAA"
+			"AAAAAAAAAPAv8cf7eQAADk1GaXM4TEygPtkc2HTLnD0AAAAAAAAA8HubVztfAAAA3AhZxwMAAAAA"
+			"AAAAAAAAAAAAAAEAAAA0vBQAknUgAAAAAAAAAPA/AAAAAAAAAADAcILI+nkAAMBwgsj6eQAAwHCC"
+			"yPp5AAABAAAAAAAAANCT1FA7XwAADQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAMEANAAAA"
+			"AAAAAAAAAAAAAAAAAEOxVztfAADoQ7FXO18AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8A"
+			"AAAAAAAAAAAAAAAAAAAAAAAAALgi68f7eQAACESxVztfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAgJq5x/t5AADg8KZXO18AAAUAAAAAAAAABgAAAAAAAAAAAAAAAAAA"
+			"AMBvU4Q7XwAABQAAAAAAAAAAAbdXO18AAAUAAAAAAAAABgAAAAAAAAAAX3hOO18AAAAAAAAAAAAA"
+			"AAAAAAAAAAAARLFXO18AAKhEsVc7XwAAAAAAAAAAAAAAAAAAO18AAAAAAADYAQAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAABAgRNPO18AAECBE087XwAAQIETTztfAAABAAAAAAAAAAAAAAAAAAAA////"
+			"/wEAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAACcMQAAnDEAAAAAAAAAAAAAAAAAAJhFsVc7XwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAJCgCwCq/hUAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwRbJXO18A"
+			"AAUAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAwAAAAAAADAAAAAAAAAA"
+			"dDIHpD5fAABOAAAANAAAACsAAAAAAAAAAAAAADdlNWE4NTk0AAAAAFECAAAAAAAAwA=="
 		)
 	)
 	(image
@@ -9816,7 +9985,25 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4A"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwh3o1O18AAAAAAAAAAAAA8Id6NTtfAAAAAAAAAAAA"
+			"APCHejU7XwAAAAAAAAAAAAABAAAALgAAAJAAAAAAAAAAoAAAAAAAAABOAAAAbwAAAHQAAABvAAAA"
+			"IAAAAFMAAABhAAAAbgAAAHMAAAAgAAAARwAAAHUAAABqAAAAYQAAAHIAAABhAAAAdAAAAGkAAAAg"
+			"AAAAQwAAAG8AAABuAAAAZAAAAGUAAABuAAAAcwAAAGUAAABkAAAAIAAAAEwAAABpAAAAZwAAAGgA"
+			"AAB0AAAAAAAAAAAAAAAA8+xPO18AANEBAAAAAAAAgOLhTztfAACwROJPO18AACAT4k87XwAAIgAA"
+			"AAAAAAAiAAAAAAAAAGUAAABzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Id6NTtfAAAAAAAA"
+			"AAAAAPCHejU7XwAAAAAAAAAAAADwh3o1O18AAAAAAAAAAAAAAQAAAGkAAACQAAAAAAAAALAAAAAA"
+			"AAAATgAAAG8AAAB0AAAAbwAAACAAAABTAAAAYQAAAG4AAABzAAAAIAAAAEcAAAB1AAAAagAAAGEA"
+			"AAByAAAAYQAAAHQAAABpAAAAIAAAAEMAAABvAAAAbgAAAGQAAABlAAAAbgAAAHMAAABlAAAAZAAA"
+			"ACAAAABFAAAAeAAAAHQAAAByAAAAYQAAAEwAAABpAAAAZwAAAGgAAAB0AAAAAAAAALu7u9C6urrv"
+			"kQAAAAAAAACA4uFPO18AACAbPwT8eQAAkOXhTztfAAAmAAAAAAAAACYAAAAAAAAAZwAAAGUAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwh3o1O18AAAAAAAAAAAAA8Id6NTtfAAAAAAAAAAAAAPCH"
+			"ejU7XwAAAAAAAAAAAAABAAAAMAAAAAADAAAAAAAAsAAAAAAAAABOAAAAbwAAAHQAAABvAAAAIAAA"
+			"AFMAAABhAAAAbgAAAHMAAAAgAAAARwAAAHUAAABqAAAAYQAAAHIAAABhAAAAdAAAAGkAAAAgAAAA"
+			"RQAAAHgAAAB0AAAAcgAAAGEAAABDAAAAbwAAAG4AAABkAAAAZQAAAG4AAABzAAAAZQAAAGQAAAAg"
+			"AAAAQgAAAGwAAABhAAAAYwAAAGsAAAAAAAAAIAAAAHAAAACRAAAAAAAAAIDi4U87XwAAQEjhTztf"
+			"AADQQuJPO18AACcAAAAAAAAAJwAAAAAAAAB0AAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"APCHejU7XwAAAAAAAAAAAADwh3o1O18AAAAAAAAAAAAA8Id6NTtfAAAAAAAAAAAAAAEAAABvAA=="
 		)
 	)
 	(image
@@ -10980,7 +11167,25 @@
 			"NlRQRnk1WWMzWnpDMlp2SGpPZnRLazBTZ1I1V1ladDM2Tzg5ZjNmVEpPdHBSRUtvVS9Nc2xTeVdw"
 			"N2t1VDRzelpwbXRuSlp0SklJME85UTVwQms2ejM0a1JvWjBnRE90T3Nud0RpbWFTeldSUlNOYkIy"
 			"d3pxSm9qaEpWNXZEemJ5TnhzRlcrMkVWaFJDbCs3c2d6dm1HUWdoaE51dmd2azltZ3R3MmJaZ0lY"
-			"RGIwOWJUcw=="
+			"RGIwOWJUc/////9BAwAAAAAAAKA/5FA7XwAAIBs/BPx5AAD//////////yEDAAAAAAAAoD/kUDtf"
+			"AAAgGz8E/HkAAP//////////AQMAAAAAAACgP+RQO18AACAbPwT8eQAA///////////hAgAAAAAA"
+			"AKA/5FA7XwAAIBs/BPx5AADQ+ge++3kAAMECAAAAAAAAoD/kUDtfAAAgGz8E/HkAAAAAAAAAAAAA"
+			"oQIAAAAAAACgP+RQO18AACAbPwT8eQAAAAAAAAAAAACBAgAAAAAAAKA/5FA7XwAAIBs/BPx5AAAA"
+			"AAAAAAAAAGECAAAAAAAAoD/kUDtfAAAgGz8E/HkAAAAAAAAAAAAAQQIAAAAAAACgP+RQO18AACAb"
+			"PwT8eQAAAAAAAAAAAAAhAgAAAAAAAKA/5FA7XwAAIBs/BPx5AAAAAAAAAAAAAAECAAAAAAAAoD/k"
+			"UDtfAAAgGz8E/HkAAAAAAAAAAAAA4QEAAAAAAACgP+RQO18AACAbPwT8eQAAAAAAAAAAAADBAQAA"
+			"AAAAAKA/5FA7XwAAIBs/BPx5AAAAAAAAAAAAAKEBAAAAAAAAoD/kUDtfAAAgGz8E/HkAAAAAAAAA"
+			"AAAAgQEAAAAAAACgP+RQO18AACAbPwT8eQAAAAAAAAAAAABhAQAAAAAAAKA/5FA7XwAAIBs/BPx5"
+			"AAAAAAAAAAAAAEEBAAAAAAAAoD/kUDtfAAAgGz8E/HkAAAAAAAAAAAAAIQEAAAAAAACgP+RQO18A"
+			"ACAbPwT8eQAAAAAAAAAAAAABAQAAAAAAAKA/5FA7XwAAIBs/BPx5AAAAAAAAAAAAAOEAAAAAAAAA"
+			"oD/kUDtfAAAgGz8E/HkAAAAAAAAAAAAAwQAAAAAAAACgP+RQO18AACAbPwT8eQAAAAAAAAAAAACh"
+			"AAAAAAAAAKA/5FA7XwAAIBs/BPx5AAAAAAAAAAAAAIEAAAAAAAAAoD/kUDtfAAAgGz8E/HkAAAAA"
+			"AAAAAAAAYQAAAAAAAACgP+RQO18AACAbPwT8eQAAAAAAAAAAAABBAAAAAAAAAKA/5FA7XwAAIBs/"
+			"BPx5AABgAgAAAAAAACEAAAAAAAAAoD/kUDtfAAAgGz8E/HkAAEAXAAAAAAAAMAAAAAAAAABKXtK8"
+			"Pl8AAEAbPwT8eQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAsQIAAAAAAABQOJmBO18AAODEZ4E7"
+			"XwAAAAAAAAAAAAAAAAAAAAAAAPAv8cf7eQAAmMXjRd7bRwy44UC4Yj7dKTMAAAAAAAQAAEfWgTtf"
+			"AAAAAQAA1gMAAAAAAAAAAAAAADESUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AJClcFA7Xw=="
 		)
 	)
 	(label "VIN4-"
@@ -11343,6 +11548,28 @@
 		)
 		(uuid "ff00a264-eba9-49e1-b728-235aa56c585e")
 	)
+	(global_label "VCOMDA"
+		(shape input)
+		(at 326.39 161.29 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2869235e-959f-43ac-bee2-3480ee42b311")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 326.39 171.7743 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCOMAD"
 		(shape input)
 		(at 339.09 162.56 270)
@@ -11567,6 +11794,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 57.15 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d6467bf-59c9-47bd-8f60-2e143c903f52")
+		(property "Reference" "H2"
+			(at 59.69 255.3278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 59.69 257.7521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 57.15 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 57.15 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd410093-2144-46c8-89f9-6b5bf66d28d8")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 30.48 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f2d44d5-1bff-4eb1-b40b-90dc29b75b2b")
+		(property "Reference" "R3"
+			(at 32.766 264.16 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 27.432 265.176 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 30.48 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 30.48 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2aa1f0f2-3544-4962-b252-09357a107d51")
+		)
+		(pin "1"
+			(uuid "faf1e2a1-f6cc-4a9e-9c13-da75f720d1ca")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 191.77 147.32 90)
 		(unit 1)
@@ -11629,6 +11992,73 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b4117d1-f22d-4aa1-a572-774e7a332c8d")
+		(property "Reference" "#PWR091"
+			(at 30.48 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 250.5131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08f8c2e6-332b-44c0-a29f-1d720fea5e91")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -11979,6 +12409,278 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 57.15 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fa1e9f8-699d-47bb-8360-51da898a9411")
+		(property "Reference" "#PWR095"
+			(at 57.15 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 230.1931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3326a369-dec7-4dfe-81f6-5ddb4e101fd6")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 57.15 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "519be959-f7b3-4308-9894-b38bcd31a6ec")
+		(property "Reference" "R4"
+			(at 59.436 264.16 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 54.102 265.176 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 57.15 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 57.15 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2d2abc4-66ab-462e-84e4-649f68b232ea")
+		)
+		(pin "1"
+			(uuid "1e2af071-988a-4035-b70d-e6eb4b764379")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 57.15 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5585c043-4806-448b-81c4-9b4193e4119e")
+		(property "Reference" "R6"
+			(at 59.436 245.11 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 54.102 246.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 57.15 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 57.15 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "22c71daa-286a-4406-887a-71618db281fa")
+		)
+		(pin "1"
+			(uuid "0f3ff62e-94ba-4f79-aa4e-62dd8f48703c")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55994db4-d05c-4582-97be-4a6b22080aa6")
+		(property "Reference" "#PWR092"
+			(at 57.15 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 250.5131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e179c78-67c6-4dba-89b8-19a12e9fdf45")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 269.24 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12106,6 +12808,276 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b3bceb9-1633-4a0c-939a-fc970aa46fee")
+		(property "Reference" "#PWR094"
+			(at 30.48 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 230.1931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a803ad1-dff0-4815-bc74-eb5fdf6a5984")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6355821d-cda3-4cee-8db2-af10a2aeb947")
+		(property "Reference" "#PWR075"
+			(at 57.15 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 269.5631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "163598aa-64b0-4bfc-8cf0-1be6bb6277d2")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6413a730-71e8-42bc-b46a-217b5afb1fc9")
+		(property "Reference" "H5"
+			(at 33.02 215.9578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 33.02 218.3821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 30.48 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 30.48 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be1a5105-292b-4242-bbf7-fe21821e5635")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 30.48 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68ad950d-317a-4112-9575-3a1f967c2150")
+		(property "Reference" "R7"
+			(at 32.766 224.79 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 27.432 225.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 30.48 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 30.48 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4b74dede-eae4-48bc-b23f-e1ed0b7dce52")
+		)
+		(pin "1"
+			(uuid "0604bb1d-f831-4884-b051-e9b241a43ea1")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -12508,6 +13480,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 30.48 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78faf943-f6de-4f5c-8995-dcc2a485e982")
+		(property "Reference" "R5"
+			(at 32.766 245.11 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 27.432 246.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 30.48 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 30.48 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "db2c452b-3684-4598-abad-c6cf98c778ad")
+		)
+		(pin "1"
+			(uuid "9a2b92b6-80b9-4959-80f5-145414a8e1d6")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 354.33 147.32 0)
 		(unit 1)
@@ -12708,6 +13749,140 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d2b9e5e-09cf-48da-80a6-2f52e6fa0b23")
+		(property "Reference" "#PWR074"
+			(at 30.48 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 269.5631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f47a217-ecb6-4e43-9fa7-700f54a424a3")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 57.15 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81e4e8f3-12bd-4dd8-9986-19771602205e")
+		(property "Reference" "H6"
+			(at 59.69 215.9578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 59.69 218.3821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 57.15 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 57.15 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2240000-3b85-4a2c-8d36-42cc0e80dfa3")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -13733,6 +14908,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 57.15 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b16a7dae-881f-4bec-a3fe-1f35d1e36857")
+		(property "Reference" "R8"
+			(at 59.436 224.79 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 54.102 225.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 57.15 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 57.15 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7976ef7-8338-43ef-a571-971fcce466c4")
+		)
+		(pin "1"
+			(uuid "a5d35f85-479e-4620-b901-cd9ce87c4820")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 157.48 203.2 0)
 		(unit 1)
@@ -13794,6 +15038,73 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4fae7f1-f3c4-451e-b8b3-81244d8a35bc")
+		(property "Reference" "H3"
+			(at 33.02 236.2778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 33.02 238.7021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 30.48 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 30.48 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3be6eb0f-222f-47e6-9abf-5f54e075593c")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -13933,6 +15244,73 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc08cd7d-067e-4a8f-9e64-2d613af21c30")
+		(property "Reference" "H1"
+			(at 33.02 255.3278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 33.02 257.7521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 30.48 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 30.48 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a71250c2-d2d3-48df-83ba-97bb225f74f8")
+		)
+		(instances
+			(project ""
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -14139,6 +15517,73 @@
 			(project "pcm3168a_euro1"
 				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 57.15 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5bc4d71-a3fe-4f24-b472-89fd43d81201")
+		(property "Reference" "H4"
+			(at 59.69 236.2778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 59.69 238.7021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 57.15 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 57.15 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02cd30a5-9213-4c79-8eca-3d043f940630")
+		)
+		(instances
+			(project "pcm3168a_euro1"
+				(path "/afe1fbe1-30b6-4eb7-94cf-5d2700d51271"
+					(reference "H4")
 					(unit 1)
 				)
 			)
