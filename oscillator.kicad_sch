@@ -1342,17 +1342,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "FOOTPRINT\nOK"
-		(exclude_from_sim no)
-		(at 110.49 103.124 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 15 1)
-			)
-		)
-		(uuid "2d15c97f-0397-49e9-b7cf-ba8f1904bf93")
-	)
 	(junction
 		(at 78.74 133.35)
 		(diameter 0)
@@ -1920,6 +1909,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 96.52 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2edaeb8e-6779-4757-a8c2-309ce634ea29")
 		)
@@ -1982,6 +1980,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 185.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "GCJ188R71H104KA12D"
 			(at 185.42 96.52 0)
 			(effects
 				(font
@@ -2058,6 +2065,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW060322R0FKEAC"
+			(at 203.2 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6b7071f8-130a-4c62-8337-0569a3613d43")
 		)
@@ -2119,6 +2135,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CRCW060322R0FKEAC"
+			(at 105.41 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2801,6 +2826,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "SG-210STF 24.5760ML0"
+			(at 91.44 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d9d780ab-6b1e-4d3d-8136-8c8da565de32")
 		)
@@ -2877,6 +2911,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GRM188Z71A475ME15D"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5542a27e-05a5-4650-bf4a-e505c69bd713")
 		)
@@ -2945,6 +2988,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW06030000Z0EA"
+			(at 140.97 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ad00bf10-0307-4348-b9c9-ed98e4c6d407")
 		)
@@ -3006,6 +3058,15 @@
 			)
 		)
 		(property "Description" "Single Schmitt Buffer Gate, Low-Voltage CMOS"
+			(at 184.15 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SN74LVC1G17DBVR"
 			(at 184.15 110.49 0)
 			(effects
 				(font
@@ -3083,6 +3144,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 60.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "61300211121"
 			(at 60.96 121.92 0)
 			(effects
 				(font
@@ -3180,7 +3250,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "fbae9642-885d-429e-9dff-e0b47cc7f576")
 		(property "Reference" "R34"
 			(at 76.2 105.41 90)
@@ -3190,7 +3260,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "4.7k"
 			(at 74.168 105.41 90)
 			(effects
 				(font
@@ -3218,6 +3288,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 78.74 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "ERA-3AEB472V"
+			(at 78.74 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)

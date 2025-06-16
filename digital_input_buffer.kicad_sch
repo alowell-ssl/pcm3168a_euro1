@@ -1556,6 +1556,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 167.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "405a3d7c-ed97-495e-a9f8-979a21b38c4a")
 		)
@@ -1848,6 +1857,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW06030000Z0EA"
+			(at 123.19 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d4814f10-124a-4159-a5c0-04165861139d")
 		)
@@ -1913,6 +1931,15 @@
 			)
 		)
 		(property "Description" "Single Schmitt Buffer Gate, Low-Voltage CMOS"
+			(at 166.37 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SN74LVC1G17DBVR"
 			(at 166.37 91.44 0)
 			(effects
 				(font
@@ -2214,6 +2241,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW060322R0FKEAC"
+			(at 185.42 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "92f28a1c-fdfe-456d-be1f-c4e11cfd92d1")
 		)
@@ -2281,6 +2317,15 @@
 		)
 		(property "Description" "Zener diode, small symbol"
 			(at 116.84 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SMF5.0A"
+			(at 116.84 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
