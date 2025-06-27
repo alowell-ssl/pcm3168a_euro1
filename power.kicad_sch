@@ -7283,10 +7283,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "82af23ce-5081-468b-bce9-8b741af23189")
 		(property "Reference" "C44"
-			(at 163.6141 49.5941 0)
+			(at 164.592 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7830,10 +7829,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bd3ec73c-81a2-4e15-a804-acaf26bb4a8d")
 		(property "Reference" "C43"
-			(at 154.7241 49.5941 0)
+			(at 153.924 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8036,7 +8034,7 @@
 		(dnp no)
 		(uuid "c55ec68d-2495-43a2-8aa5-2b7bf1fd2c86")
 		(property "Reference" "C42"
-			(at 148.209 49.0417 0)
+			(at 139.954 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
