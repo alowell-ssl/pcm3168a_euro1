@@ -1787,6 +1787,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "1N4148W"
+			(at 132.08 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6887de38-25e8-48bd-80d7-23a68c667946")
 		)
@@ -1853,6 +1862,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 111.76 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CRCW06030000Z0EA"
 			(at 111.76 113.03 0)
 			(effects
 				(font
@@ -1935,6 +1953,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 137.16 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ffbb4daa-5789-4c66-af62-06d03f062c26")
 		)
@@ -2009,6 +2036,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW0603470RFKEA"
+			(at 165.1 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c922172a-9daa-49bf-8c47-af892eadf1f9")
 		)
@@ -2073,6 +2109,15 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 102.87 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SJ1-3523N"
 			(at 102.87 97.79 0)
 			(effects
 				(font
@@ -2221,6 +2266,15 @@
 			)
 		)
 		(property "Description" "Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "160-1791-ND"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -2524,6 +2578,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 124.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CRCW0603220RFKEA"
+			(at 124.46 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)

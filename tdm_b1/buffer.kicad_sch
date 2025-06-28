@@ -1088,6 +1088,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12290a28-62d3-43a4-ac3e-a5a5b464acc6")
 		)
@@ -1545,6 +1554,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW060333R0FKEAC"
+			(at 142.24 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "50cd90ac-2aeb-45d5-8cc9-7c58cb47e16d")
 		)
@@ -1688,6 +1706,15 @@
 			)
 		)
 		(property "Description" "Single Schmitt Buffer Gate, Low-Voltage CMOS"
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SN74LVC1G17DBVR"
 			(at 123.19 76.2 0)
 			(effects
 				(font

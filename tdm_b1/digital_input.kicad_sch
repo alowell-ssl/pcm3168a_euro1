@@ -1560,6 +1560,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 163.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c31d621-4681-4469-8d8e-73406c0f2c1f")
 		)
@@ -1792,6 +1801,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW06030000Z0EA"
+			(at 119.38 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3fbda09a-2975-4bb0-9e2c-1e844b2bbb28")
 		)
@@ -1861,6 +1879,15 @@
 			)
 		)
 		(property "Description" "Single Schmitt Buffer Gate, Low-Voltage CMOS"
+			(at 162.56 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "SN74LVC1G17DBVR"
 			(at 162.56 99.06 0)
 			(effects
 				(font
@@ -2254,6 +2281,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "CRCW060333R0FKEAC"
+			(at 181.61 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "530277a9-bf7b-4333-8586-949347d39c9c")
 		)
@@ -2284,7 +2320,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f5802bcf-02d6-4f6c-956b-fe7e90cd1b0f")
 		(property "Reference" "D1"

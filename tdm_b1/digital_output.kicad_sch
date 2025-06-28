@@ -1530,6 +1530,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "SN74LVC1G17DBVR"
+			(at 156.21 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bdc73dbf-4555-4da9-8fd3-1a0c6295fdae")
 		)
@@ -1666,6 +1675,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CRCW06030000Z0EA"
+			(at 113.03 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,6 +1895,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" "GCJ188R71H104KA12D"
+			(at 157.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12e064b2-1acf-4049-8265-8b24ebea7b45")
 		)
@@ -2005,6 +2032,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 175.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CRCW060333R0FKEAC"
+			(at 175.26 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
