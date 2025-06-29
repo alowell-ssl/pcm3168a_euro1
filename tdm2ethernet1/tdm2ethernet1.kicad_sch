@@ -1,0 +1,66 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "76772572-b362-4118-b78b-51107c850acd")
+	(paper "A3")
+	(lib_symbols)
+	(text "TODO\n- start layout for everything except MCU (finalize MCU choice later\n- "
+		(exclude_from_sim no)
+		(at 353.568 241.554 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9976fc29-85ab-4e0a-80cc-3d679e877642")
+	)
+	(sheet
+		(at 223.52 92.075)
+		(size 130.175 45.085)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fd4618a1-e6f3-40dd-89a1-dab390a2f342")
+		(property "Sheetname" "ethernet"
+			(at 223.52 91.3634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet.kicad_sch"
+			(at 223.52 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "tdm2ethernet1"
+				(path "/76772572-b362-4118-b78b-51107c850acd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
